@@ -870,7 +870,17 @@ a.tel_link {
     top: 0;
     left: calc( -100% + 100px);
     z-index: 5;
-    cursor: url("img/btn_left.png"), auto;
+}
+
+.left_slice {
+    /*cursor: url("img/btn_left.png"), pointer;*/
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+    cursor: url('img/btn_left.cur'), url('img/btn_left.cur'), n-resize;
+    cursor: url('img/btn_left.cur'), n-resize\9;
+    *cursor: url('img/btn_left.cur'), n-resize;
+    _cursor: url('img/btn_left.cur'), n-resize;
 }
 
 .right_slice {
@@ -880,7 +890,17 @@ a.tel_link {
     top: 0;
     right: calc( -101% + 100px);
     z-index: 5;
-    cursor: url("img/btn_right.png"), auto;
+}
+
+.right_slice {
+    /*cursor: url("img/btn_right.png"), pointer;*/
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+    cursor: url('/img/btn_right.cur'), url('img/btn_right.cur'), n-resize;
+    cursor: url('/img/btn_right.cur'), n-resize\9;
+    *cursor: url('/img/btn_right.cur'), n-resize;
+    _cursor: url('/img/btn_right.cur'), n-resize;
 }
 
 /*-- /Section 1 --*/
