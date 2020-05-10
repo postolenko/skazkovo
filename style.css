@@ -870,17 +870,11 @@ a.tel_link {
     top: 0;
     left: calc( -100% + 100px);
     z-index: 5;
+    /*cursor: url('btn_left.cur') !important;*/
 }
 
-.left_slice {
-    /*cursor: url("img/btn_left.png"), pointer;*/
-    cursor: grab;
-    cursor: -moz-grab;
-    cursor: -webkit-grab;
-    cursor: url('img/btn_left.cur'), url('img/btn_left.cur'), n-resize;
-    cursor: url('img/btn_left.cur'), n-resize\9;
-    *cursor: url('img/btn_left.cur'), n-resize;
-    _cursor: url('img/btn_left.cur'), n-resize;
+.left_slice:hover {
+    cursor: url(img/btn_left.cur), pointer !important;
 }
 
 .right_slice {
@@ -892,15 +886,15 @@ a.tel_link {
     z-index: 5;
 }
 
-.right_slice {
-    /*cursor: url("img/btn_right.png"), pointer;*/
-    cursor: grab;
+.right_slice:hover {
+    cursor: url('img/btn_right.cur') !important;
+/*    cursor: grab;
     cursor: -moz-grab;
     cursor: -webkit-grab;
-    cursor: url('/img/btn_right.cur'), url('img/btn_right.cur'), n-resize;
-    cursor: url('/img/btn_right.cur'), n-resize\9;
-    *cursor: url('/img/btn_right.cur'), n-resize;
-    _cursor: url('/img/btn_right.cur'), n-resize;
+    cursor: url('btn_right.cur'), url('btn_right.cur'), n-resize;
+    cursor: url('btn_right.cur'), n-resize\9;
+    *cursor: url('btn_right.cur'), n-resize;
+    _cursor: url('btn_right.cur'), n-resize;*/
 }
 
 /*-- /Section 1 --*/
