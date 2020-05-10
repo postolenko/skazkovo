@@ -1321,6 +1321,7 @@ a.tel_link {
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, .2);
+    z-index: 2;
 }
 
 .slider_2 .slide video {
@@ -1343,7 +1344,7 @@ a.tel_link {
 .slider_2 .slide > .row {
     width: 100%;
     position: relative;
-    z-index: 2;
+    z-index: 3;
 }
 
 .slide_content {
