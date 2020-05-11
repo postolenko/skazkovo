@@ -231,6 +231,7 @@ h1 {
 }
 
 h2 {
+    letter-spacing: 2px;
     font-family: "Bebas Neue Book";
     font-size: 60px;
     line-height: 60px;
@@ -239,6 +240,7 @@ h2 {
 }
 
 h3 {
+    letter-spacing: 1px;
     font-family: "Museo Sans Cyrl";
     font-size: 60px;
     line-height: 60px;
@@ -247,6 +249,7 @@ h3 {
 }
 
 h4 {
+    letter-spacing: 1px;
     font-family: "Museo Sans Cyrl";
     font-size: 18px;
     line-height: 30px;
@@ -682,7 +685,7 @@ a.tel_link {
     display: -webkit-flex !important;
     align-items: center;
     -webkit-align-items: center;
-    min-height: 100vh;
+    height: 880px;
     width: 100vw !important;
     position: relative;
 }
@@ -870,11 +873,8 @@ a.tel_link {
     top: 0;
     left: calc( -100% + 100px);
     z-index: 5;
-    /*cursor: url('btn_left.cur') !important;*/
-}
+    cursor: url('img/btn_left.cur'), pointer;
 
-.left_slice:hover {
-    cursor: url(img/btn_left.cur), pointer !important;
 }
 
 .right_slice {
@@ -884,17 +884,7 @@ a.tel_link {
     top: 0;
     right: calc( -101% + 100px);
     z-index: 5;
-}
-
-.right_slice:hover {
-    cursor: url('img/btn_right.cur') !important;
-/*    cursor: grab;
-    cursor: -moz-grab;
-    cursor: -webkit-grab;
-    cursor: url('btn_right.cur'), url('btn_right.cur'), n-resize;
-    cursor: url('btn_right.cur'), n-resize\9;
-    *cursor: url('btn_right.cur'), n-resize;
-    _cursor: url('btn_right.cur'), n-resize;*/
+    cursor: url('img/btn_right.cur');
 }
 
 /*-- /Section 1 --*/
@@ -902,9 +892,9 @@ a.tel_link {
 /*-- Section 2 --*/
 
 .plan_sect {
-    min-height: 851px;
+    min-height: 1200px;
     background-image: url(img/plan_bg.png);
-    background-size: contain;
+    background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
 }
@@ -912,7 +902,7 @@ a.tel_link {
 .plan_templ {
     display: flex;
     display: -webkit-flex;
-    margin: 84px 0 90px 0;
+    margin: 84px 0;
 }
 
 .plan_templ > div:nth-child(1) {
@@ -1096,15 +1086,12 @@ a.tel_link {
 
 .video_thumb .descript h2 {
     padding: 10px 0;
-    letter-spacing: 1px;
 }
 
 .video_thumb .descript p {
     padding: 10px 0;
     font-size: 22px;
     line-height: 35px;
-    font-weight: normal;
-    color: #000000;
 }
 
 .video_thumb .img_box {
@@ -1258,6 +1245,9 @@ a.tel_link {
     height: 255px;
     overflow: hidden;
     position: relative;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 }
 
 .article .img_box img {
@@ -1306,11 +1296,12 @@ a.tel_link {
     display: -webkit-flex;
     align-items: center;
     -webkit-align-items: center;
-    min-height: 100vh;
+    height: 740px;
     background-size: cover;
     background-position: center;
     position: relative;
     padding: 53px 0 24px 0;
+    background-color: #262626;
 }
 
 .slider_2 .slide:before {
@@ -1391,6 +1382,7 @@ a.tel_link {
 }
 
 .badge p {
+    padding: 9px 0 !important;
     font-size: 14px;
     line-height: 20px;
     color: #fff;
@@ -1766,12 +1758,16 @@ input[name="infrastructure"]:checked#polyclinic ~ div.map_wrapp img[src*="hospit
 /*-- Section 7 --*/
 
 .sect_7 {
-    padding-top: 56px;
+    padding-top: 89px;
 }
 
 .gallery_wrapp {
     margin-top: 31px;
     position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 }
 
 .gallery_wrapp .gallery_left {
@@ -2007,12 +2003,12 @@ input[name="infrastructure"]:checked#polyclinic ~ div.map_wrapp img[src*="hospit
 }
 
 .two_cols .left {
-    width: calc( 100% - 400px);
-    padding-right: 100px;
+    width: calc( 100% - 445px);
+    padding-right: 68px;
 }
 
 .two_cols .right {
-    width: 400px;
+    width: 445px;
     padding-left: 10px;
 }
 
@@ -2043,7 +2039,7 @@ input[name="infrastructure"]:checked#polyclinic ~ div.map_wrapp img[src*="hospit
 }
 
 .person_info {
-    padding: 22px 20px 44px 80px;
+    padding: 31px 20px 44px 80px;
 }
 
 .photo_box {
@@ -2090,13 +2086,16 @@ input[name="infrastructure"]:checked#polyclinic ~ div.map_wrapp img[src*="hospit
 
 .person_content p {
     padding-bottom: 10px;
+    line-height: 27px;
+}
+
+.person_content > div:nth-child(2) p {
+    line-height: 20px;
 }
 
 .person_content p .name {
     display: block;
-    font-size: 32px;
-    line-height: 32px;
-    font-weight: normal;
+    font-weight: 500;
 }
 
 .white_box_2 {
@@ -2497,7 +2496,7 @@ body.fixed {
     cursor: pointer;
     border: 1px solid transparent;
     background-color: transparent;
-    background-image: url(img/close.PNG);
+    background-image: url(img/close.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -2669,3 +2668,24 @@ body.fixed {
 }
 
 /*-- /Animation --*/
+/*
+.hover_cursor {
+    cursor: none;
+    width: 154px;
+    height: 157px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.hover_cursor.left {
+    background-image: url(img/btn_left.png);
+}
+
+.hover_cursor.right {
+    background-image: url(img/btn_right.png);
+}*/

@@ -1,26 +1,15 @@
-/*@media only screen and (max-width: 2400px) {
-
-	.slick-current + .slick-slide .slide .slide_descript {
-	    left: -120%;
-	}
-
-}
-
 @media only screen and (max-width: 1900px) {
 
-	.slick-current + .slick-slide .slide .slide_descript {
-	    left: -79%;
+	/*-- Section 2 --*/
+
+	.plan_sect {
+	    min-height: 850px;
+	    background-size: contain;
 	}
+
+	/*-- /Section 2 --*/
 
 }
-
-@media only screen and (max-width: 1600px) {
-
-	.slick-current + .slick-slide .slide .slide_descript {
-	    left: -53%;
-	}
-
-}*/
 
 @media only screen and (max-width: 1240px) {
 
@@ -41,6 +30,14 @@
 	}
 
 	/*-- /Header --*/
+
+	/*-- Section 1 --*/
+
+	.slider .slide {
+	    height: 700px;
+	}
+
+	/*-- /Section 1 --*/
 
 	/*-- Section 2 --*/
 
@@ -204,15 +201,15 @@
 	}
 
 	.slider .slide_descript h2 {
-	    padding: 16px 0;
-	    font-size: 73px;
-	    line-height: 85px;
+	    padding: 10px 0;
+		font-size: 59px;
+		line-height: 67px;
 	}
 
 	.slider .slide_descript p {
-	    padding: 15px 0;
-	    font-size: 20px;
-	    line-height: 33px;
+	    padding: 10px 0;
+		font-size: 19px;
+		line-height: 30px;
 	}
 
 	/*-- /Section 1 --*/
@@ -256,6 +253,10 @@
 
 	/*-- Section 1 --*/
 
+	.slider .slide {
+	    height: 480px;
+	}
+
 	.slick-current + .slick-slide .slide .slide_descript {
 	    left: 0 !important;
 	}
@@ -267,6 +268,10 @@
 	/*-- /Section 1 --*/
 
 	/*-- Section 3 --*/
+
+	.video_thumb .descript {
+	    padding-right: 0;
+	}
 
 	.video_thumbs {
 	    margin: 84px 0;
@@ -282,6 +287,32 @@
 	}
 
 	/*-- /Section 3 --*/
+
+	/*-- Section 5 --*/
+
+	.slider_2 .slide {
+	    height: 547px;
+	    padding: 15px 0 20px 0;
+	}
+
+	.slide_content {
+	    padding: 30px 0;
+	}
+
+	.slide_2_descript {
+	    margin: 5px 0 20px 0;
+	}
+
+	.slide_2_descript h2 {
+	    padding: 5px 0;
+	    line-height: 55px;
+	}
+
+	.slider_2_controls {
+	    bottom: 10%;
+	}
+
+	/*-- /Section 5 --*/
 
 	/*-- Section 6 --*/
 
@@ -464,7 +495,20 @@
 		text-align: center;
 	}
 
+	.green_pill {
+	    font-size: 24px;
+	    line-height: 25px;
+	}
+
+	.submit_wrapp .green_pill {
+	    font-size: 20px;
+	}
+
 	/*-- Section 1 --*/
+
+	.slider .slide {
+	    height: 380px;
+	}
 
 	.slider .slide_descript {
 	    padding: 84px 5vw 31px 0;
@@ -573,7 +617,7 @@
 
 	.slider_2 .slide {
 		min-height: auto;
-	    padding: 53px 0 63px 0;
+	    padding: 50px 0 63px 0;
 	}
 
 	.slide_content {
@@ -581,7 +625,7 @@
 	}
 
 	.slide_2_descript {
-	    margin: 37px 0 27px 0;
+		margin: 41px 0;
 	}
 
 	.slide_2_descript h2 {
@@ -589,12 +633,21 @@
 	    line-height: 40px;
 	}
 
+	.slider_2 .slide h3 {
+	    font-size: 10px;
+	    line-height: 16px;
+	}
+
+	.slide_2_descript p {
+	    padding: 4px 0;
+	}
+
 	.slider_2_controls {
-	    bottom: 13%;
+		bottom: 14%;
 	}
 
 	.slider_2_controls > .row {
-	    text-align: center;
+		text-align: left;
 	}
 
 	/*-- /Section 5 --*/
@@ -715,7 +768,7 @@
 @media only screen and (max-width: 480px) {
 
 	.row {
-		padding: 0 10px;
+		padding: 0 15px;
 	}
 
 	/*-- Section 7 --*/
